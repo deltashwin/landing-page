@@ -12,14 +12,14 @@ body {
 
 .top {
     display: flex;
-    padding: 35px;
+    padding: 50px 0;
     justify-content: space-around;
-    gap: 16px;
+    gap: 32px;
 
     img {
        width:350px;
        height: auto;
-        align-self: center;
+       align-self: center;
     }
 }
 
@@ -48,6 +48,8 @@ button {
     color: #f9faf8;
     margin: 0;
     padding: 5px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 .header {
@@ -57,6 +59,7 @@ button {
     div {
         font-weight: 900;
         padding-left: 1rem;
+        font-size: 24px;
     }
     
 }
@@ -76,33 +79,52 @@ a {
 }
 
 img {
-    border-color: red;
-    border-width: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .info-container {
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin: 40px 0;
 }
 
 .info-text {
     text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 16px;
+    margin: 16px;
+    color: #1f2937;
 }
 
 .info {
     max-width: 200px;
 }
 
-.quote {
+.quote-container {
     display: flex;
-    background-color: #35373b;
-    color:#5a6f8d94;
-    font-size: 36px;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font-size: 25px;
     font-weight: lighter;
-    font-style: italic;
+    align-items: center;
+    padding: 25px 15% 0;
+    gap: 16px;
+
+    .quote {
+        font-size: 36px;
+        color: #1f2937;
+        font-style: italic;
+        height: auto;
+    }
+
+    p {
+        align-self: flex-end;
+        font-weight: 900;
+        color: #000000;
+    }
 }
 
 .banner {
@@ -112,17 +134,22 @@ img {
     background-color: #3882f6;
     color: #f9faf8;
     margin: 50px;
+
+    button {
+        border-color: white;
+        border-width: 3px;
+    }
 }
 
 .banner.text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0;
     padding: 25px;
 }
 
 .footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
